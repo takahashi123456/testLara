@@ -1,3 +1,12 @@
+<h1>アプリの詳細</h1>
+<p>コレクション管理アプリです。これと<a href="https://github.com/takahashi123456/barcode">barcode</a>のkansei.pyとバーコードリーダーを使うとお手軽にWEBでものを管理できる<br>
+WEBアプリケーションです。今はスクレイピングでフォームに入力していますが、いずれはAPI等で送信したい。<br>
+あとサブスク系の作品のスクレイピングしている最中です。
+</p>
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
