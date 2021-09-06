@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 //ログイン認証していないと拒否される
-Route::group(['middleware' => 'auth'], function(){
+//Route::group(['middleware' => 'auth'], function(){
     
 Route::get('/', 'App\Http\Controllers\HomeController@index')->name('home');
 
@@ -36,6 +36,6 @@ Route::post('/nankore/collection/create', 'App\Http\Controllers\nankoreControlle
 
 });
 
-Auth::routes();
+//Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
