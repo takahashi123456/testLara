@@ -35,6 +35,12 @@ Route::get('/nankore/collection/create', 'App\Http\Controllers\nankoreController
 Route::post('/nankore/collection/create', 'App\Http\Controllers\nankoreController@bookcreate');
 
 });
+// Route::get('/react', function(){
+//     return view('App\Http\Controllers\HomeController@app')->name('app');
+// });
+Route::get('/{any}', function(){
+    return view('app');
+})->where('any', '.*'); 
 
 //Auth::routes();
 
