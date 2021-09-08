@@ -5,7 +5,8 @@
 ```
     Route::get('/{any}', function(){
     return view('app');
-    })->where('any', '.*');```
+    })->where('any', '.*');
+```
 
 <p>コレクション管理アプリです。これと<a href="https://github.com/takahashi123456/barcode">barcode</a>のkansei.pyとバーコードリーダーを使うとお手軽にWEBでものを管理できる<br>
 WEBアプリケーションです。今はスクレイピングでフォームに入力していますが、いずれはAPI等で送信したい。<br>
