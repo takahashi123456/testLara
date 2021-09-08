@@ -1,12 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
-const App = () => {
+
+import Navbar from './Navbar';
+import User from './User';
+import About from './About';
+import Top from './Top';
+
+function App() {
     return (
-        <p>表示テスト</p>
-
+        <Router>
+            <div>
+                <Navbar />
+                <Switch>
+                    <Route path="/" exact component={Top} />
+                    <Route path='/User' component={User} />
+                    <Route path='/About' component={About} />
+                </Switch>
+            </div>
+        </Router>
     )
-}
+};
+
+
+
+
 
 if (document.getElementById('app')) {
     ReactDOM.render(<App />, document.getElementById('app'));
