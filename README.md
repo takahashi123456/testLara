@@ -1,4 +1,11 @@
 <h1>アプリの詳細</h1>
+<h2>現在react導入中！　のためきちんとは動きません。 </h2>
+<h2>web.phpの下記部分
+    ```
+    Route::get('/{any}', function(){
+    return view('app');
+    })->where('any', '.*');```
+    をコメントアウトすればreactなしの部分が正しく動きます</h2>
 <p>コレクション管理アプリです。これと<a href="https://github.com/takahashi123456/barcode">barcode</a>のkansei.pyとバーコードリーダーを使うとお手軽にWEBでものを管理できる<br>
 WEBアプリケーションです。今はスクレイピングでフォームに入力していますが、いずれはAPI等で送信したい。<br>
 あとサブスク系の作品のスクレイピングしている最中です。
