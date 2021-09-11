@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 //ログイン認証していないと拒否される
-//Route::group(['middleware' => 'auth'], function(){
+Route::group(['middleware' => 'auth'], function(){
     
 Route::get('/', 'App\Http\Controllers\HomeController@index')->name('home');
 
@@ -42,6 +42,6 @@ Route::get('/{any}', function(){
     return view('app');
 })->where('any', '.*'); 
 
-//Auth::routes();
+Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
